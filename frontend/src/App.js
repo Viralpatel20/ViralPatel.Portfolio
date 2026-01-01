@@ -378,7 +378,7 @@ const App = () => {
                   <a
                     href="https://customer-assets.emergentagent.com/job_glreporting/artifacts/komewxbd_Viral_Patel_Resume.pdf"
                     download
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-700 hover:to-cyan-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-emerald-500/50"
                     data-testid="download-resume-btn"
                   >
                     <Download className="w-5 h-5" />
@@ -386,7 +386,7 @@ const App = () => {
                   </a>
                   <button
                     onClick={() => setShowContactForm(true)}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-700 hover:to-fuchsia-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-violet-500/50"
                     data-testid="contact-me-btn"
                   >
                     <Mail className="w-5 h-5" />
@@ -397,11 +397,11 @@ const App = () => {
 
               <div className="flex justify-center">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-2xl opacity-50"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500 rounded-full blur-2xl opacity-50 animate-pulse"></div>
                   <img
                     src="https://viral-portfolio-3.emergent.host/viral-patel-photo.png"
                     alt="Viral Patel - Business System Analyst"
-                    className="relative rounded-full w-80 h-80 object-cover border-4 border-white/20 shadow-2xl"
+                    className="relative rounded-full w-80 h-80 object-cover border-4 border-emerald-400/30 shadow-2xl shadow-emerald-500/50"
                     data-testid="profile-photo"
                   />
                 </div>
