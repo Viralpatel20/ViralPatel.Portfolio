@@ -348,14 +348,15 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-teal-900 to-purple-950">
       {/* Hero Section */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-cyan-500/10 to-violet-500/10"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-400/20 via-transparent to-transparent"></div>
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-4">
-              <span className="inline-block px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium backdrop-blur-sm border border-blue-500/30">
+              <span className="inline-block px-4 py-2 bg-emerald-500/20 text-emerald-300 rounded-full text-sm font-medium backdrop-blur-sm border border-emerald-500/30">
                 Business Systems & Quality Assurance
               </span>
             </div>
@@ -364,7 +365,7 @@ const App = () => {
               <div className="text-left space-y-6">
                 <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
                   Viral Patel
-                  <span className="block text-3xl md:text-4xl mt-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                  <span className="block text-3xl md:text-4xl mt-2 bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">
                     Business System Analyst
                   </span>
                 </h1>
