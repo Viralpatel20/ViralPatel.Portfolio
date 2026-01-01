@@ -327,7 +327,7 @@ const App = () => {
     {
       icon: '🎓',
       school: 'Gujarat Technological University',
-      location: 'Ahmedabad, India',
+      location: 'Bharuch, Gujarat, India',
       degree: 'Bachelor of Engineering',
       program: 'Computer Science Engineering',
       skills: ['Software Testing', 'Quality Assurance', 'Agile Methodologies', 'Security Testing', 'Business Analysis', 'Data Structures']
