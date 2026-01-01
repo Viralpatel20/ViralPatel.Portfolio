@@ -356,7 +356,7 @@ const App = () => {
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-4">
-              <span className="inline-block px-4 py-2 bg-emerald-500/20 text-emerald-300 rounded-full text-sm font-medium backdrop-blur-sm border border-emerald-500/30">
+              <span className="inline-block px-4 py-2 bg-cyan-500/10 text-cyan-300 rounded-full text-sm font-medium backdrop-blur-sm border border-cyan-500/20">
                 Business Systems & Quality Assurance
               </span>
             </div>
@@ -365,7 +365,7 @@ const App = () => {
               <div className="text-left space-y-6">
                 <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
                   Viral Patel
-                  <span className="block text-3xl md:text-4xl mt-2 bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">
+                  <span className="block text-3xl md:text-4xl mt-2 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                     Business System Analyst
                   </span>
                 </h1>
@@ -378,7 +378,7 @@ const App = () => {
                   <a
                     href="https://customer-assets.emergentagent.com/job_glreporting/artifacts/komewxbd_Viral_Patel_Resume.pdf"
                     download
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-700 hover:to-cyan-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-emerald-500/50"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-700 hover:to-purple-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-cyan-500/30"
                     data-testid="download-resume-btn"
                   >
                     <Download className="w-5 h-5" />
@@ -386,7 +386,7 @@ const App = () => {
                   </a>
                   <button
                     onClick={() => setShowContactForm(true)}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-700 hover:to-fuchsia-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-violet-500/50"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-purple-500/30"
                     data-testid="contact-me-btn"
                   >
                     <Mail className="w-5 h-5" />
@@ -397,13 +397,16 @@ const App = () => {
 
               <div className="flex justify-center">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 via-cyan-500 to-violet-500 rounded-full blur-2xl opacity-50 animate-pulse"></div>
-                  <img
-                    src="https://viral-portfolio-3.emergent.host/viral-patel-photo.png"
-                    alt="Viral Patel - Business System Analyst"
-                    className="relative rounded-full w-80 h-80 object-cover border-4 border-emerald-400/30 shadow-2xl shadow-emerald-500/50"
-                    data-testid="profile-photo"
-                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-full blur-3xl opacity-40 animate-pulse"></div>
+                  <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-cyan-400/20 shadow-2xl shadow-cyan-500/30">
+                    <img
+                      src="https://viral-portfolio-3.emergent.host/viral-patel-photo.png"
+                      alt="Viral Patel - Business System Analyst"
+                      className="w-full h-full object-cover object-top scale-110"
+                      style={{ objectPosition: '50% 10%' }}
+                      data-testid="profile-photo"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -412,9 +415,9 @@ const App = () => {
       </div>
 
       {/* About Section */}
-      <section className="py-20 bg-slate-950/50" data-testid="about-section">
+      <section className="py-20 bg-slate-900/30" data-testid="about-section">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold text-white mb-8 text-center">About Me</h2>
             <div className="bg-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-emerald-500/20 shadow-xl shadow-emerald-500/10">
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
