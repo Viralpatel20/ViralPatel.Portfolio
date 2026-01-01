@@ -717,7 +717,10 @@ const App = () => {
       {/* Education */}
       <section className="py-20 bg-gradient-to-br from-[#0a0a0f] via-[#1a0a2e] to-[#0a0a0f]" data-testid="education-section">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-left max-w-7xl mx-auto">Education</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-left max-w-7xl mx-auto"
+              style={{ textShadow: '0 0 30px rgba(0, 212, 255, 0.5), 0 0 60px rgba(123, 47, 247, 0.3)' }}>
+            Education
+          </h2>
           <div className="max-w-7xl mx-auto space-y-12">
             {education.map((edu, index) => (
               <div key={index} className="relative pl-12" data-testid={`education-${index}`}>
