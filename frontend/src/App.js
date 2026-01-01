@@ -667,12 +667,12 @@ const App = () => {
       {/* Certifications */}
       <section className="py-20 bg-[#0a0a0f]" id="certifications" data-testid="certifications-section">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-center">Professional Certifications</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-left max-w-7xl mx-auto">Professional Certifications</h2>
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="bg-[#0a0a0f]/60 backdrop-blur-sm p-6 rounded-xl border border-[#00d4ff]/20 hover:border-[#00d4ff]/50 transition-all shadow-lg"
+                className="bg-[#0a0a0f]/60 backdrop-blur-sm p-6 rounded-xl border-2 border-[#00d4ff]/20 hover:border-[#00d4ff]/60 transition-all shadow-lg"
                 data-testid={`certification-${index}`}
               >
                 <div className="flex items-start justify-between mb-3">
@@ -682,7 +682,7 @@ const App = () => {
                       href={cert.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#00d4ff] hover:text-cyan-300 transition-colors"
+                      className="text-[#00d4ff] hover:text-[#00d4ff]/80 transition-colors"
                       data-testid={`cert-link-${index}`}
                     >
                       <ExternalLink className="w-5 h-5" />
@@ -699,32 +699,42 @@ const App = () => {
       {/* Education */}
       <section className="py-20 bg-[#0f0f1a]/50" data-testid="education-section">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-center">Education</h2>
-          <div className="max-w-7xl mx-auto space-y-8">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-left max-w-7xl mx-auto">Education</h2>
+          <div className="max-w-7xl mx-auto space-y-12">
             {education.map((edu, index) => (
-              <div
-                key={index}
-                className="bg-[#0a0a0f]/60 backdrop-blur-sm rounded-2xl p-8 border border-[#00d4ff]/20 shadow-xl"
-                data-testid={`education-${index}`}
-              >
-                <div className="flex items-start gap-6">
-                  <div className="text-5xl">{edu.icon}</div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-2">{edu.school}</h3>
-                    <p className="text-gray-400 mb-3">{edu.location}</p>
-                    <div className="mb-4">
-                      <p className="text-[#00d4ff] font-semibold">{edu.degree}</p>
-                      <p className="text-gray-300 text-lg">{edu.program}</p>
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                      {edu.skills.map((skill, idx) => (
-                        <span
-                          key={idx}
-                          className="px-3 py-1 bg-slate-700/30 text-gray-300 text-sm rounded-lg border border-slate-600/30"
-                        >
-                          {skill}
-                        </span>
-                      ))}
+              <div key={index} className="relative pl-12" data-testid={`education-${index}`}>
+                {/* Timeline Line */}
+                <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-[#00d4ff]/50 via-[#7b2ff7]/30 to-[#00d4ff]/50"></div>
+                
+                {/* Timeline Dot */}
+                <div className="absolute left-0 top-2 -translate-x-1/2 w-4 h-4 rounded-full bg-[#00d4ff] border-4 border-[#0a0a0f]"
+                     style={{ boxShadow: '0 0 15px rgba(0, 212, 255, 0.6)' }}></div>
+                
+                {/* Education Card */}
+                <div className="bg-gradient-to-br from-[#0a0a0f]/80 to-[#1a0a2e]/60 backdrop-blur-sm rounded-2xl p-8 border-2 border-[#00d4ff]/20 hover:border-[#00d4ff]/40 transition-all shadow-xl"
+                     style={{ boxShadow: '0 0 30px rgba(0, 212, 255, 0.1)' }}>
+                  <div className="flex items-start gap-6">
+                    <div className="text-5xl">{edu.icon}</div>
+                    <div className="flex-1">
+                      <h3 className="text-3xl font-bold text-white mb-2">{edu.school}</h3>
+                      <div className="flex items-center gap-2 mb-3">
+                        <MapPin className="w-4 h-4 text-[#00d4ff]" />
+                        <p className="text-gray-400">{edu.location}</p>
+                      </div>
+                      <div className="mb-4">
+                        <p className="text-[#00d4ff] font-semibold text-lg">{edu.degree}</p>
+                        <p className="text-[#f107a3] text-xl font-semibold mt-1">{edu.program}</p>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {edu.skills.map((skill, idx) => (
+                          <span
+                            key={idx}
+                            className="px-3 py-1 bg-[#0a0a0f]/60 text-gray-300 text-sm rounded-lg border border-[#00d4ff]/20"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -735,10 +745,10 @@ const App = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-[#0a0a0f]" data-testid="contact-section">
+      <section className="py-20 bg-[#0a0a0f]" id="contact" data-testid="contact-section">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-6">Get In Touch</h2>
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-6 text-left">Get In Touch</h2>
             <p className="text-xl text-gray-300 mb-10">
               I'm always interested in hearing about new opportunities, collaborations, and challenges. Whether you have a project in mind or just want to connect, feel free to reach out!
             </p>
