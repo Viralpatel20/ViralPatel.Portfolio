@@ -412,11 +412,11 @@ const App = () => {
       </div>
 
       {/* About Section */}
-      <section className="py-20 bg-slate-900/50" data-testid="about-section">
+      <section className="py-20 bg-slate-950/50" data-testid="about-section">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-white mb-8 text-center">About Me</h2>
-            <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 shadow-xl">
+            <div className="bg-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-emerald-500/20 shadow-xl shadow-emerald-500/10">
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 I'm a results-driven Business System Analyst with 6+ years of experience bridging business needs and technology solutions in enterprise environments. My expertise lies in supporting full SDLC/STLC cycles, optimizing business processes, and translating functional requirements into scalable solutions.
               </p>
@@ -426,13 +426,13 @@ const App = () => {
               
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="flex items-center gap-3 text-gray-300">
-                  <Mail className="w-5 h-5 text-blue-400" />
-                  <a href="mailto:theviralpatel24@gmail.com" className="hover:text-blue-400 transition-colors">
+                  <Mail className="w-5 h-5 text-emerald-400" />
+                  <a href="mailto:theviralpatel24@gmail.com" className="hover:text-emerald-400 transition-colors">
                     theviralpatel24@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center gap-3 text-gray-300">
-                  <Phone className="w-5 h-5 text-blue-400" />
+                  <Phone className="w-5 h-5 text-emerald-400" />
                   <span>+1 (647) 685-9107</span>
                 </div>
               </div>
@@ -445,16 +445,16 @@ const App = () => {
       <section className="py-20" data-testid="skills-section">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-white mb-12 text-center">Technical Skills & Competencies</h2>
-          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-all hover:transform hover:scale-105 shadow-lg"
+                className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700/50 hover:border-emerald-500/50 transition-all hover:transform hover:scale-105 shadow-lg hover:shadow-emerald-500/20"
                 data-testid={`skill-${index}`}
               >
                 <div className="text-4xl mb-3">{skill.icon}</div>
-                <h3 className="text-white font-semibold mb-2 text-lg">{skill.name}</h3>
-                <p className="text-blue-400 text-sm font-medium uppercase tracking-wide">{skill.category}</p>
+                <h3 className="text-white font-semibold mb-2 text-base">{skill.name}</h3>
+                <p className="text-emerald-400 text-xs font-medium uppercase tracking-wide">{skill.category}</p>
               </div>
             ))}
           </div>
@@ -462,10 +462,10 @@ const App = () => {
       </section>
 
       {/* Key Achievements */}
-      <section className="py-20 bg-slate-900/50" data-testid="achievements-section">
+      <section className="py-20 bg-slate-950/50" data-testid="achievements-section">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-white mb-12 text-center">Key Achievements</h2>
-          <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { value: '6+', label: 'Years Experience' },
               { value: '20+', label: 'BRDs & FRDs Delivered' },
