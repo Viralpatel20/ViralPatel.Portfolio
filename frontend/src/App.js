@@ -436,17 +436,11 @@ const App = () => {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#00d4ff]/10 via-transparent to-transparent"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-4">
-              <span className="inline-block px-4 py-2 bg-cyan-500/10 text-cyan-300 rounded-full text-sm font-medium backdrop-blur-sm border border-cyan-500/20">
-                Business Systems & Quality Assurance
-              </span>
-            </div>
-            
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="text-left space-y-6">
                 <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
                   Viral Patel
-                  <span className="block text-3xl md:text-4xl mt-2 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  <span className="block text-3xl md:text-4xl mt-2 bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent">
                     Business System Analyst
                   </span>
                 </h1>
@@ -459,7 +453,8 @@ const App = () => {
                   <a
                     href="https://customer-assets.emergentagent.com/job_glreporting/artifacts/komewxbd_Viral_Patel_Resume.pdf"
                     download
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-700 hover:to-purple-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-cyan-500/30"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#00d4ff] to-[#7b2ff7] hover:from-[#00b8e6] hover:to-[#6929d9] text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
+                    style={{ boxShadow: '0 0 20px rgba(0, 212, 255, 0.3)' }}
                     data-testid="download-resume-btn"
                   >
                     <Download className="w-5 h-5" />
@@ -467,7 +462,8 @@ const App = () => {
                   </a>
                   <button
                     onClick={() => setShowContactForm(true)}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-purple-500/30"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#7b2ff7] to-[#f107a3] hover:from-[#6929d9] hover:to-[#d9068f] text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
+                    style={{ boxShadow: '0 0 20px rgba(241, 7, 163, 0.3)' }}
                     data-testid="contact-me-btn"
                   >
                     <Mail className="w-5 h-5" />
@@ -478,8 +474,9 @@ const App = () => {
 
               <div className="flex justify-center">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-full blur-3xl opacity-40 animate-pulse"></div>
-                  <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-cyan-400/20 shadow-2xl shadow-cyan-500/30">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] rounded-full blur-3xl opacity-40 animate-pulse"></div>
+                  <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-[#00d4ff]/30 shadow-2xl"
+                       style={{ boxShadow: '0 0 40px rgba(0, 212, 255, 0.3)' }}>
                     <img
                       src="https://viral-portfolio-3.emergent.host/viral-patel-photo.png"
                       alt="Viral Patel - Business System Analyst"
@@ -493,10 +490,10 @@ const App = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* About Section */}
-      <section className="py-20 bg-slate-900/30" data-testid="about-section">
+      <section id="about" className="py-20 bg-[#0f0f1a]/50" data-testid="about-section">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-8 text-center">About Me</h2>
