@@ -359,7 +359,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-[#0a0a0f]">
       {/* Fixed Header Navigation */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0f]/95 backdrop-blur-md border-b border-[#00d4ff]/20">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#0a0a0f] via-[#1a0a2e] to-[#0a0a0f] backdrop-blur-md border-b border-[#00d4ff]/20">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
