@@ -694,7 +694,7 @@ const App = () => {
           data-testid="project-modal"
         >
           <div
-            className="bg-slate-800 rounded-2xl max-w-4xl w-full my-8 border border-slate-700 shadow-2xl"
+            className="bg-slate-900 rounded-2xl max-w-4xl w-full my-8 border border-emerald-500/30 shadow-2xl shadow-emerald-500/20"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative h-64 md:h-96">
@@ -711,14 +711,14 @@ const App = () => {
                 <X className="w-6 h-6" />
               </button>
               <div className="absolute bottom-4 left-4">
-                <span className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-full">
+                <span className="px-4 py-2 bg-gradient-to-r from-emerald-600 to-cyan-600 text-white font-semibold rounded-full shadow-lg">
                   {selectedProject.badge}
                 </span>
               </div>
             </div>
 
             <div className="p-8 max-h-[60vh] overflow-y-auto">
-              <p className="text-blue-400 font-medium mb-2">{selectedProject.category}</p>
+              <p className="text-emerald-400 font-medium mb-2">{selectedProject.category}</p>
               <h2 className="text-3xl font-bold text-white mb-4">{selectedProject.title}</h2>
               
               <div className="space-y-6">
