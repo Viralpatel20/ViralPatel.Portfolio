@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Linkedin, Github, Download, ExternalLink, X, Phone, MapPin, Calendar } from 'lucide-react';
+import { Mail, Linkedin, Github, Download, ExternalLink, X, Phone, MapPin, Calendar, Menu } from 'lucide-react';
 import './App.css';
 
 const App = () => {
@@ -7,6 +7,15 @@ const App = () => {
   const [showContactForm, setShowContactForm] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [formStatus, setFormStatus] = useState('');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setMobileMenuOpen(false);
+    }
+  };
 
   const skills = [
     { icon: '📋', name: 'Requirements Elicitation', category: 'BUSINESS ANALYSIS' },
