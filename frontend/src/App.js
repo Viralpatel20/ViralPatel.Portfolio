@@ -531,15 +531,15 @@ const App = () => {
       <section className="py-20 bg-slate-900/30" data-testid="projects-section">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">Key Projects</h2>
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">Key Projects</h2>
             <p className="text-gray-400 text-lg">Delivered impactful solutions across enterprise systems</p>
           </div>
           
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-slate-900/50 backdrop-blur-sm rounded-xl overflow-hidden border border-slate-700/50 hover:border-emerald-500/50 transition-all hover:transform hover:scale-105 shadow-xl cursor-pointer group"
+                className="bg-slate-800/30 backdrop-blur-sm rounded-xl overflow-hidden border border-slate-700/30 hover:border-cyan-500/50 transition-all hover:transform hover:scale-105 shadow-xl cursor-pointer group"
                 onClick={() => setSelectedProject(project)}
                 data-testid={`project-${project.id}`}
               >
@@ -550,13 +550,13 @@ const App = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-gradient-to-r from-emerald-600 to-cyan-600 text-white text-xs font-semibold rounded-full shadow-lg">
+                    <span className="px-3 py-1 bg-gradient-to-r from-cyan-600 to-purple-600 text-white text-xs font-semibold rounded-full shadow-lg">
                       {project.badge}
                     </span>
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-sm text-emerald-400 font-medium mb-2">{project.category}</p>
+                  <p className="text-sm text-cyan-400 font-medium mb-2">{project.category}</p>
                   <h3 className="text-xl font-bold text-white mb-3 line-clamp-2">{project.title}</h3>
                   <p className="text-gray-400 text-sm mb-4 line-clamp-3">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
