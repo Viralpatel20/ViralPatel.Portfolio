@@ -473,7 +473,7 @@ const App = () => {
               { value: '$550K+', label: 'Cost Savings Identified' }
             ].map((achievement, index) => (
               <div key={index} className="text-center" data-testid={`achievement-${index}`}>
-                <div className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2">
+                <div className="text-5xl font-bold bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent mb-2">
                   {achievement.value}
                 </div>
                 <div className="text-gray-400 text-sm font-medium">{achievement.label}</div>
@@ -487,16 +487,16 @@ const App = () => {
       <section className="py-20" data-testid="experience-section">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-white mb-12 text-center">Professional Experience</h2>
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="max-w-6xl mx-auto space-y-8">
             {experiences.map((exp, index) => (
               <div
                 key={index}
-                className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all shadow-xl"
+                className="bg-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-emerald-500/50 transition-all shadow-xl"
                 data-testid={`experience-${index}`}
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <Calendar className="w-5 h-5 text-blue-400" />
-                  <span className="text-blue-400 font-medium">{exp.period}</span>
+                  <Calendar className="w-5 h-5 text-emerald-400" />
+                  <span className="text-emerald-400 font-medium">{exp.period}</span>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">{exp.title}</h3>
                 <div className="flex items-center gap-2 mb-6">
@@ -525,7 +525,7 @@ const App = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 bg-slate-900/50" data-testid="projects-section">
+      <section className="py-20 bg-slate-950/50" data-testid="projects-section">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">Key Projects</h2>
