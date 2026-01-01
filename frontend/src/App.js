@@ -493,7 +493,7 @@ const App = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-[#0f0f1a]/50" data-testid="about-section">
+      <section id="about" className="py-20 bg-gradient-to-br from-[#0a0a0f] via-[#1a0a2e] to-[#0a0a0f]" data-testid="about-section">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-8 text-left">About Me</h2>
@@ -545,7 +545,7 @@ const App = () => {
       </section>
 
       {/* Key Achievements */}
-      <section id="achievements" className="py-20 bg-[#0f0f1a]/50" data-testid="achievements-section">
+      <section id="achievements" className="py-20 bg-gradient-to-br from-[#0a0a0f] via-[#1a0a2e] to-[#0a0a0f]" data-testid="achievements-section">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-left max-w-7xl mx-auto">Key Achievements</h2>
           <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -616,7 +616,7 @@ const App = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-[#0f0f1a]/50" data-testid="projects-section">
+      <section id="projects" className="py-20 bg-gradient-to-br from-[#0a0a0f] via-[#1a0a2e] to-[#0a0a0f]" data-testid="projects-section">
         <div className="container mx-auto px-4">
           <div className="text-left mb-12 max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-4">Key Projects</h2>
@@ -697,7 +697,7 @@ const App = () => {
       </section>
 
       {/* Education */}
-      <section className="py-20 bg-[#0f0f1a]/50" data-testid="education-section">
+      <section className="py-20 bg-gradient-to-br from-[#0a0a0f] via-[#1a0a2e] to-[#0a0a0f]" data-testid="education-section">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-left max-w-7xl mx-auto">Education</h2>
           <div className="max-w-7xl mx-auto space-y-12">
