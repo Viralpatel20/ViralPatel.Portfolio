@@ -567,40 +567,48 @@ const App = () => {
       </section>
 
       {/* Professional Experience */}
-      <section className="py-20 bg-[#0a0a0f]" data-testid="experience-section">
+      <section id="experience" className="py-20 bg-[#0a0a0f]" data-testid="experience-section">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-center">Professional Experience</h2>
-          <div className="max-w-7xl mx-auto space-y-8">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-left max-w-7xl mx-auto">Professional Experience</h2>
+          <div className="max-w-7xl mx-auto space-y-12">
             {experiences.map((exp, index) => (
-              <div
-                key={index}
-                className="bg-[#0a0a0f]/60 backdrop-blur-sm rounded-2xl p-8 border border-[#00d4ff]/20 hover:border-[#00d4ff]/50 transition-all shadow-xl"
-                data-testid={`experience-${index}`}
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <Calendar className="w-5 h-5 text-[#00d4ff]" />
-                  <span className="text-[#00d4ff] font-medium">{exp.period}</span>
+              <div key={index} className="relative pl-12" data-testid={`experience-${index}`}>
+                {/* Timeline Line */}
+                <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-[#00d4ff]/50 via-[#7b2ff7]/30 to-[#00d4ff]/50"></div>
+                
+                {/* Timeline Dot */}
+                <div className="absolute left-0 top-2 -translate-x-1/2 w-4 h-4 rounded-full bg-[#00d4ff] border-4 border-[#0a0a0f]"
+                     style={{ boxShadow: '0 0 15px rgba(0, 212, 255, 0.6)' }}></div>
+                
+                {/* Experience Card */}
+                <div className="bg-gradient-to-br from-[#0a0a0f]/80 to-[#1a0a2e]/60 backdrop-blur-sm rounded-2xl p-8 border-2 border-[#00d4ff]/20 hover:border-[#00d4ff]/40 transition-all shadow-xl"
+                     style={{ boxShadow: '0 0 30px rgba(0, 212, 255, 0.1)' }}>
+                  <div className="flex items-center gap-3 mb-4">
+                    <Calendar className="w-5 h-5 text-[#00d4ff]" />
+                    <span className="text-[#00d4ff] font-medium text-lg">{exp.period}</span>
+                  </div>
+                  <h3 className="text-3xl font-bold text-white mb-2">{exp.title}</h3>
+                  <div className="flex items-center gap-2 mb-6">
+                    <span className="text-xl text-[#f107a3] font-semibold">{exp.company}</span>
+                    {exp.location && (
+                      <>
+                        <span className="text-gray-500">•</span>
+                        <div className="flex items-center gap-1 text-gray-400">
+                          <MapPin className="w-4 h-4" />
+                          <span>{exp.location}</span>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                  <ul className="space-y-4">
+                    {exp.points.map((point, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-gray-300 text-base leading-relaxed">
+                        <span className="text-[#00d4ff] mt-1 text-lg">▸</span>
+                        <span>{point.replace('▸ ', '')}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">{exp.title}</h3>
-                <div className="flex items-center gap-2 mb-6">
-                  <span className="text-xl text-gray-300">{exp.company}</span>
-                  {exp.location && (
-                    <>
-                      <span className="text-gray-500">•</span>
-                      <div className="flex items-center gap-1 text-gray-400">
-                        <MapPin className="w-4 h-4" />
-                        <span>{exp.location}</span>
-                      </div>
-                    </>
-                  )}
-                </div>
-                <ul className="space-y-3">
-                  {exp.points.map((point, idx) => (
-                    <li key={idx} className="text-gray-300 text-base leading-relaxed">
-                      {point}
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>
@@ -608,9 +616,9 @@ const App = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 bg-[#0f0f1a]/50" data-testid="projects-section">
+      <section id="projects" className="py-20 bg-[#0f0f1a]/50" data-testid="projects-section">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-left mb-12 max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-4">Key Projects</h2>
             <p className="text-gray-400 text-lg">Delivered impactful solutions across enterprise systems</p>
           </div>
