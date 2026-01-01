@@ -358,11 +358,83 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-[#0a0a0f]">
+      {/* Fixed Header Navigation */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0f]/95 backdrop-blur-md border-b border-[#00d4ff]/20">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-20">
+            {/* Logo */}
+            <div className="text-3xl font-bold bg-gradient-to-r from-[#f107a3] via-[#7b2ff7] to-[#00d4ff] bg-clip-text text-transparent cursor-pointer"
+                 onClick={() => scrollToSection('hero')}
+                 style={{ textShadow: '0 0 30px rgba(0, 212, 255, 0.5)' }}>
+              VP
+            </div>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center space-x-8">
+              {['Home', 'About', 'Skills', 'Achievements', 'Experience', 'Projects', 'Certifications', 'Contact'].map((item, index) => (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(item.toLowerCase())}
+                  className="text-white hover:text-[#00d4ff] transition-all relative group"
+                  data-testid={`nav-${item.toLowerCase()}`}
+                >
+                  {item}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#00d4ff] to-[#f107a3] group-hover:w-full transition-all duration-300"></span>
+                  {index === 0 && <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-[#00d4ff] to-[#f107a3]" style={{ boxShadow: '0 0 10px #00d4ff' }}></span>}
+                </button>
+              ))}
+            </nav>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden text-[#00d4ff]"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              data-testid="mobile-menu-btn"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-[#0a0a0f]/98 border-t border-[#00d4ff]/20">
+            <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+              {['Home', 'About', 'Skills', 'Achievements', 'Experience', 'Projects', 'Certifications', 'Contact'].map((item) => (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(item.toLowerCase())}
+                  className="text-white hover:text-[#00d4ff] transition-colors text-left py-2"
+                >
+                  {item}
+                </button>
+              ))}
+            </nav>
+          </div>
+        )}
+      </header>
+
+      {/* Spacer for fixed header */}
+      <div className="h-20"></div>
+
+      {/* Category Badge */}
+      <div className="container mx-auto px-4 pt-6">
+        <div className="max-w-7xl mx-auto">
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#0a0a0f] border-2 border-[#00d4ff] rounded-full text-[#00d4ff] text-sm font-medium backdrop-blur-sm"
+                style={{ boxShadow: '0 0 20px rgba(0, 212, 255, 0.3)' }}>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            Business Systems & Quality Assurance
+          </span>
+        </div>
+      </div>
+
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-[#0a0a0f] via-slate-900 to-[#0a0a0f]">
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-400/20 via-transparent to-transparent"></div>
-        <div className="container mx-auto px-4 py-20 relative z-10">
+      <section id="home" className="relative overflow-hidden bg-gradient-to-br from-[#0a0a0f] via-[#1a0a2e] to-[#0a0a0f] pt-12 pb-20">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#00d4ff]/5 via-[#7b2ff7]/5 to-[#f107a3]/5"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#00d4ff]/10 via-transparent to-transparent"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-4">
               <span className="inline-block px-4 py-2 bg-cyan-500/10 text-cyan-300 rounded-full text-sm font-medium backdrop-blur-sm border border-cyan-500/20">
