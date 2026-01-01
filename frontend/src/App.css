@@ -16,6 +16,11 @@ body {
   min-height: 100vh;
 }
 
+/* Hide Emergent Badge */
+#emergent-badge {
+  display: none !important;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
