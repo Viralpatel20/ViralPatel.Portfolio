@@ -496,7 +496,7 @@ const App = () => {
       <section id="about" className="py-20 bg-[#0f0f1a]/50" data-testid="about-section">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-8 text-center">About Me</h2>
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-8 text-left">About Me</h2>
             <div className="bg-[#0a0a0f]/60 backdrop-blur-sm rounded-2xl p-8 border-2 border-[#00d4ff]/20 shadow-xl"
                  style={{ boxShadow: '0 0 30px rgba(0, 212, 255, 0.1)' }}>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
@@ -526,7 +526,7 @@ const App = () => {
       {/* Technical Skills */}
       <section id="skills" className="py-20 bg-[#0a0a0f]" data-testid="skills-section">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-center">Technical Skills & Competencies</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-left max-w-7xl mx-auto">Technical Skills & Competencies</h2>
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {skills.map((skill, index) => (
               <div
@@ -547,7 +547,7 @@ const App = () => {
       {/* Key Achievements */}
       <section id="achievements" className="py-20 bg-[#0f0f1a]/50" data-testid="achievements-section">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-center">Key Achievements</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-left max-w-7xl mx-auto">Key Achievements</h2>
           <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { value: '6+', label: 'Years Experience' },
