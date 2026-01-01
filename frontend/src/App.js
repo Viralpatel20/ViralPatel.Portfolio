@@ -549,11 +549,11 @@ const App = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="bg-[#0a0a0f]/60 backdrop-blur-sm p-6 rounded-xl border-2 border-[#00d4ff]/20 hover:border-[#00d4ff]/60 transition-all hover:transform hover:scale-105 shadow-lg"
+                className="bg-gradient-to-br from-[#1a0a2e]/90 to-[#2d1b4e]/70 backdrop-blur-sm p-6 rounded-xl border-2 border-[#00d4ff]/20 hover:border-[#00d4ff]/60 transition-all hover:transform hover:scale-105 shadow-lg"
                 style={{ boxShadow: '0 0 20px rgba(0, 212, 255, 0.1)' }}
                 data-testid={`skill-${index}`}
               >
-                <div className="text-4xl mb-3">{skill.icon}</div>
+                <div className="text-4xl mb-3" style={{ filter: `drop-shadow(0 0 10px ${skill.color})` }}>{skill.icon}</div>
                 <h3 className="text-white font-semibold mb-2 text-base">{skill.name}</h3>
                 <p className="text-[#00d4ff] text-xs font-medium uppercase tracking-wide">{skill.category}</p>
               </div>
