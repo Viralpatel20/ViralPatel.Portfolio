@@ -779,12 +779,12 @@ const App = () => {
       {/* Contact Form Modal */}
       {showContactForm && (
         <div
-          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-4"
           onClick={() => setShowContactForm(false)}
           data-testid="contact-form-modal"
         >
           <div
-            className="bg-slate-900 rounded-2xl max-w-md w-full p-8 border border-emerald-500/30 shadow-2xl shadow-emerald-500/20"
+            className="bg-slate-900/95 rounded-2xl max-w-md w-full p-8 border border-cyan-500/20 shadow-2xl shadow-cyan-500/10"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between mb-6">
@@ -806,7 +806,7 @@ const App = () => {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-emerald-500 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-cyan-500 transition-colors"
                   placeholder="Your name"
                   data-testid="contact-name-input"
                 />
@@ -818,7 +818,7 @@ const App = () => {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-emerald-500 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-cyan-500 transition-colors"
                   placeholder="your.email@example.com"
                   data-testid="contact-email-input"
                 />
@@ -830,7 +830,7 @@ const App = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows="4"
-                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-emerald-500 transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-cyan-500 transition-colors resize-none"
                   placeholder="Your message..."
                   data-testid="contact-message-input"
                 />
@@ -838,7 +838,7 @@ const App = () => {
               <button
                 type="submit"
                 disabled={formStatus === 'sending'}
-                className="w-full px-6 py-3 bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-700 hover:to-cyan-700 disabled:bg-slate-600 text-white rounded-lg font-semibold transition-all shadow-lg shadow-emerald-500/30"
+                className="w-full px-6 py-3 bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-700 hover:to-purple-700 disabled:bg-slate-600 text-white rounded-lg font-semibold transition-all shadow-lg shadow-cyan-500/20"
                 data-testid="contact-submit-btn"
               >
                 {formStatus === 'sending' ? 'Opening Email Client...' : formStatus === 'success' ? '✓ Email Client Opened' : 'Send Message'}
@@ -849,7 +849,7 @@ const App = () => {
       )}
 
       {/* Footer */}
-      <footer className="py-8 bg-slate-950/80 border-t border-slate-800">
+      <footer className="py-8 bg-slate-950/95 border-t border-cyan-500/10">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-400">© 2025 Viral Patel. All rights reserved.</p>
         </div>
