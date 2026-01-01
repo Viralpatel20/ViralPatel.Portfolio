@@ -769,7 +769,10 @@ const App = () => {
       <section className="py-20 bg-gradient-to-br from-[#0a0a0f] via-[#1a0a2e] to-[#0a0a0f]" id="contact" data-testid="contact-section">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-6 text-left">Get In Touch</h2>
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-6 text-left"
+                style={{ textShadow: '0 0 30px rgba(0, 212, 255, 0.5), 0 0 60px rgba(123, 47, 247, 0.3)' }}>
+              Get In Touch
+            </h2>
             <p className="text-xl text-gray-300 mb-10">
               I'm always interested in hearing about new opportunities, collaborations, and challenges. Whether you have a project in mind or just want to connect, feel free to reach out!
             </p>
