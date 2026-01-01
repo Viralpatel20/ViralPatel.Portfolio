@@ -777,7 +777,7 @@ const App = () => {
           data-testid="project-modal"
         >
           <div
-            className="bg-slate-900/95 rounded-2xl max-w-4xl w-full my-8 border border-[#00d4ff]/20 shadow-2xl shadow-[#00d4ff]/10"
+            className="bg-[#0a0a0f]/95 rounded-2xl max-w-4xl w-full my-8 border border-[#00d4ff]/20 shadow-2xl shadow-[#00d4ff]/10"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative h-64 md:h-96">
@@ -864,7 +864,7 @@ const App = () => {
           data-testid="contact-form-modal"
         >
           <div
-            className="bg-slate-900/95 rounded-2xl max-w-md w-full p-8 border border-[#00d4ff]/20 shadow-2xl shadow-[#00d4ff]/10"
+            className="bg-[#0a0a0f]/95 rounded-2xl max-w-md w-full p-8 border border-[#00d4ff]/20 shadow-2xl shadow-[#00d4ff]/10"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between mb-6">
@@ -886,7 +886,7 @@ const App = () => {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-[#00d4ff] transition-colors"
+                  className="w-full px-4 py-3 bg-[#0a0a0f] border border-slate-700 rounded-lg text-white focus:outline-none focus:border-[#00d4ff] transition-colors"
                   placeholder="Your name"
                   data-testid="contact-name-input"
                 />
@@ -898,7 +898,7 @@ const App = () => {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-[#00d4ff] transition-colors"
+                  className="w-full px-4 py-3 bg-[#0a0a0f] border border-slate-700 rounded-lg text-white focus:outline-none focus:border-[#00d4ff] transition-colors"
                   placeholder="your.email@example.com"
                   data-testid="contact-email-input"
                 />
@@ -910,7 +910,7 @@ const App = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows="4"
-                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-[#00d4ff] transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-[#0a0a0f] border border-slate-700 rounded-lg text-white focus:outline-none focus:border-[#00d4ff] transition-colors resize-none"
                   placeholder="Your message..."
                   data-testid="contact-message-input"
                 />
@@ -929,7 +929,7 @@ const App = () => {
       )}
 
       {/* Footer */}
-      <footer className="py-8 bg-slate-950/95 border-t border-[#00d4ff]/10">
+      <footer className="py-8 bg-[#0a0a0f]/95 border-t border-[#00d4ff]/10">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-400">© 2025 Viral Patel. All rights reserved.</p>
         </div>
