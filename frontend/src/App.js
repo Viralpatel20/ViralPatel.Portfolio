@@ -536,7 +536,7 @@ const App = () => {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-slate-700/50 hover:border-blue-500/50 transition-all hover:transform hover:scale-105 shadow-xl cursor-pointer group"
+                className="bg-slate-900/50 backdrop-blur-sm rounded-xl overflow-hidden border border-slate-700/50 hover:border-emerald-500/50 transition-all hover:transform hover:scale-105 shadow-xl cursor-pointer group"
                 onClick={() => setSelectedProject(project)}
                 data-testid={`project-${project.id}`}
               >
@@ -547,13 +547,13 @@ const App = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">
+                    <span className="px-3 py-1 bg-gradient-to-r from-emerald-600 to-cyan-600 text-white text-xs font-semibold rounded-full shadow-lg">
                       {project.badge}
                     </span>
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-sm text-blue-400 font-medium mb-2">{project.category}</p>
+                  <p className="text-sm text-emerald-400 font-medium mb-2">{project.category}</p>
                   <h3 className="text-xl font-bold text-white mb-3 line-clamp-2">{project.title}</h3>
                   <p className="text-gray-400 text-sm mb-4 line-clamp-3">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
