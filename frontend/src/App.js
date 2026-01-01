@@ -577,14 +577,14 @@ const App = () => {
       </section>
 
       {/* Certifications */}
-      <section className="py-20" id="certifications" data-testid="certifications-section">
+      <section className="py-20 bg-[#0a0a0f]" id="certifications" data-testid="certifications-section">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center">Professional Certifications</h2>
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-12 text-center">Professional Certifications</h2>
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700/50 hover:border-emerald-500/50 transition-all shadow-lg"
+                className="bg-slate-800/30 backdrop-blur-sm p-6 rounded-xl border border-slate-700/30 hover:border-cyan-500/50 transition-all shadow-lg"
                 data-testid={`certification-${index}`}
               >
                 <div className="flex items-start justify-between mb-3">
@@ -594,7 +594,7 @@ const App = () => {
                       href={cert.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-emerald-400 hover:text-emerald-300 transition-colors"
+                      className="text-cyan-400 hover:text-cyan-300 transition-colors"
                       data-testid={`cert-link-${index}`}
                     >
                       <ExternalLink className="w-5 h-5" />
@@ -609,14 +609,14 @@ const App = () => {
       </section>
 
       {/* Education */}
-      <section className="py-20 bg-slate-950/50" data-testid="education-section">
+      <section className="py-20 bg-slate-900/30" data-testid="education-section">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center">Education</h2>
-          <div className="max-w-6xl mx-auto space-y-8">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-12 text-center">Education</h2>
+          <div className="max-w-7xl mx-auto space-y-8">
             {education.map((edu, index) => (
               <div
                 key={index}
-                className="bg-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 shadow-xl"
+                className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/30 shadow-xl"
                 data-testid={`education-${index}`}
               >
                 <div className="flex items-start gap-6">
@@ -625,14 +625,14 @@ const App = () => {
                     <h3 className="text-2xl font-bold text-white mb-2">{edu.school}</h3>
                     <p className="text-gray-400 mb-3">{edu.location}</p>
                     <div className="mb-4">
-                      <p className="text-emerald-400 font-semibold">{edu.degree}</p>
+                      <p className="text-cyan-400 font-semibold">{edu.degree}</p>
                       <p className="text-gray-300 text-lg">{edu.program}</p>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {edu.skills.map((skill, idx) => (
                         <span
                           key={idx}
-                          className="px-3 py-1 bg-slate-800/50 text-gray-300 text-sm rounded-lg border border-slate-700/50"
+                          className="px-3 py-1 bg-slate-700/30 text-gray-300 text-sm rounded-lg border border-slate-600/30"
                         >
                           {skill}
                         </span>
@@ -647,10 +647,10 @@ const App = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20" data-testid="contact-section">
+      <section className="py-20 bg-[#0a0a0f]" data-testid="contact-section">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-white mb-6">Get In Touch</h2>
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-6">Get In Touch</h2>
             <p className="text-xl text-gray-300 mb-10">
               I'm always interested in hearing about new opportunities, collaborations, and challenges. Whether you have a project in mind or just want to connect, feel free to reach out!
             </p>
@@ -658,7 +658,7 @@ const App = () => {
             <div className="flex flex-wrap justify-center gap-4">
               <button
                 onClick={() => setShowContactForm(true)}
-                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-700 hover:to-cyan-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-emerald-500/50"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-700 hover:to-purple-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-cyan-500/30"
                 data-testid="send-email-btn"
               >
                 <Mail className="w-5 h-5" />
@@ -668,7 +668,7 @@ const App = () => {
                 href="https://www.linkedin.com/in/viralpatel24/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-700 hover:to-fuchsia-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-violet-500/50"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-purple-500/30"
                 data-testid="linkedin-link"
               >
                 <Linkedin className="w-5 h-5" />
