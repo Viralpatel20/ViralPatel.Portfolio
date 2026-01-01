@@ -556,7 +556,7 @@ const App = () => {
               { value: '$550K+', label: 'Cost Savings Identified' }
             ].map((achievement, index) => (
               <div key={index} className="text-center" data-testid={`achievement-${index}`}>
-                <div className="text-5xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
+                <div className="text-5xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-2">
                   {achievement.value}
                 </div>
                 <div className="text-gray-400 text-sm font-medium">{achievement.label}</div>
@@ -569,17 +569,17 @@ const App = () => {
       {/* Professional Experience */}
       <section className="py-20 bg-[#0a0a0f]" data-testid="experience-section">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-12 text-center">Professional Experience</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-center">Professional Experience</h2>
           <div className="max-w-7xl mx-auto space-y-8">
             {experiences.map((exp, index) => (
               <div
                 key={index}
-                className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/30 hover:border-cyan-500/50 transition-all shadow-xl"
+                className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/30 hover:border-[#00d4ff]/50 transition-all shadow-xl"
                 data-testid={`experience-${index}`}
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <Calendar className="w-5 h-5 text-cyan-400" />
-                  <span className="text-cyan-400 font-medium">{exp.period}</span>
+                  <Calendar className="w-5 h-5 text-[#00d4ff]" />
+                  <span className="text-[#00d4ff] font-medium">{exp.period}</span>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">{exp.title}</h3>
                 <div className="flex items-center gap-2 mb-6">
@@ -608,10 +608,10 @@ const App = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 bg-slate-900/30" data-testid="projects-section">
+      <section className="py-20 bg-[#0f0f1a]/50" data-testid="projects-section">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">Key Projects</h2>
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-4">Key Projects</h2>
             <p className="text-gray-400 text-lg">Delivered impactful solutions across enterprise systems</p>
           </div>
           
@@ -619,7 +619,7 @@ const App = () => {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-slate-800/30 backdrop-blur-sm rounded-xl overflow-hidden border border-slate-700/30 hover:border-cyan-500/50 transition-all hover:transform hover:scale-105 shadow-xl cursor-pointer group"
+                className="bg-slate-800/30 backdrop-blur-sm rounded-xl overflow-hidden border border-slate-700/30 hover:border-[#00d4ff]/50 transition-all hover:transform hover:scale-105 shadow-xl cursor-pointer group"
                 onClick={() => setSelectedProject(project)}
                 data-testid={`project-${project.id}`}
               >
@@ -636,7 +636,7 @@ const App = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-sm text-cyan-400 font-medium mb-2">{project.category}</p>
+                  <p className="text-sm text-[#00d4ff] font-medium mb-2">{project.category}</p>
                   <h3 className="text-xl font-bold text-white mb-3 line-clamp-2">{project.title}</h3>
                   <p className="text-gray-400 text-sm mb-4 line-clamp-3">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
@@ -659,12 +659,12 @@ const App = () => {
       {/* Certifications */}
       <section className="py-20 bg-[#0a0a0f]" id="certifications" data-testid="certifications-section">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-12 text-center">Professional Certifications</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-center">Professional Certifications</h2>
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="bg-slate-800/30 backdrop-blur-sm p-6 rounded-xl border border-slate-700/30 hover:border-cyan-500/50 transition-all shadow-lg"
+                className="bg-slate-800/30 backdrop-blur-sm p-6 rounded-xl border border-slate-700/30 hover:border-[#00d4ff]/50 transition-all shadow-lg"
                 data-testid={`certification-${index}`}
               >
                 <div className="flex items-start justify-between mb-3">
@@ -674,7 +674,7 @@ const App = () => {
                       href={cert.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-cyan-400 hover:text-cyan-300 transition-colors"
+                      className="text-[#00d4ff] hover:text-cyan-300 transition-colors"
                       data-testid={`cert-link-${index}`}
                     >
                       <ExternalLink className="w-5 h-5" />
@@ -689,9 +689,9 @@ const App = () => {
       </section>
 
       {/* Education */}
-      <section className="py-20 bg-slate-900/30" data-testid="education-section">
+      <section className="py-20 bg-[#0f0f1a]/50" data-testid="education-section">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-12 text-center">Education</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-12 text-center">Education</h2>
           <div className="max-w-7xl mx-auto space-y-8">
             {education.map((edu, index) => (
               <div
@@ -705,7 +705,7 @@ const App = () => {
                     <h3 className="text-2xl font-bold text-white mb-2">{edu.school}</h3>
                     <p className="text-gray-400 mb-3">{edu.location}</p>
                     <div className="mb-4">
-                      <p className="text-cyan-400 font-semibold">{edu.degree}</p>
+                      <p className="text-[#00d4ff] font-semibold">{edu.degree}</p>
                       <p className="text-gray-300 text-lg">{edu.program}</p>
                     </div>
                     <div className="flex flex-wrap gap-2">
@@ -730,7 +730,7 @@ const App = () => {
       <section className="py-20 bg-[#0a0a0f]" data-testid="contact-section">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-6">Get In Touch</h2>
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00d4ff] via-[#7b2ff7] to-[#f107a3] bg-clip-text text-transparent mb-6">Get In Touch</h2>
             <p className="text-xl text-gray-300 mb-10">
               I'm always interested in hearing about new opportunities, collaborations, and challenges. Whether you have a project in mind or just want to connect, feel free to reach out!
             </p>
@@ -777,7 +777,7 @@ const App = () => {
           data-testid="project-modal"
         >
           <div
-            className="bg-slate-900/95 rounded-2xl max-w-4xl w-full my-8 border border-cyan-500/20 shadow-2xl shadow-cyan-500/10"
+            className="bg-slate-900/95 rounded-2xl max-w-4xl w-full my-8 border border-[#00d4ff]/20 shadow-2xl shadow-cyan-500/10"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative h-64 md:h-96">
@@ -801,7 +801,7 @@ const App = () => {
             </div>
 
             <div className="p-8 max-h-[60vh] overflow-y-auto">
-              <p className="text-cyan-400 font-medium mb-2">{selectedProject.category}</p>
+              <p className="text-[#00d4ff] font-medium mb-2">{selectedProject.category}</p>
               <h2 className="text-3xl font-bold text-white mb-4">{selectedProject.title}</h2>
               
               <div className="space-y-6">
@@ -864,7 +864,7 @@ const App = () => {
           data-testid="contact-form-modal"
         >
           <div
-            className="bg-slate-900/95 rounded-2xl max-w-md w-full p-8 border border-cyan-500/20 shadow-2xl shadow-cyan-500/10"
+            className="bg-slate-900/95 rounded-2xl max-w-md w-full p-8 border border-[#00d4ff]/20 shadow-2xl shadow-cyan-500/10"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between mb-6">
@@ -886,7 +886,7 @@ const App = () => {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-cyan-500 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-[#00d4ff] transition-colors"
                   placeholder="Your name"
                   data-testid="contact-name-input"
                 />
@@ -898,7 +898,7 @@ const App = () => {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-cyan-500 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-[#00d4ff] transition-colors"
                   placeholder="your.email@example.com"
                   data-testid="contact-email-input"
                 />
@@ -910,7 +910,7 @@ const App = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows="4"
-                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-cyan-500 transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-[#00d4ff] transition-colors resize-none"
                   placeholder="Your message..."
                   data-testid="contact-message-input"
                 />
@@ -929,7 +929,7 @@ const App = () => {
       )}
 
       {/* Footer */}
-      <footer className="py-8 bg-slate-950/95 border-t border-cyan-500/10">
+      <footer className="py-8 bg-slate-950/95 border-t border-[#00d4ff]/10">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-400">© 2025 Viral Patel. All rights reserved.</p>
         </div>
