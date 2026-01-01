@@ -574,7 +574,7 @@ const App = () => {
             {experiences.map((exp, index) => (
               <div
                 key={index}
-                className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/30 hover:border-[#00d4ff]/50 transition-all shadow-xl"
+                className="bg-[#0a0a0f]/60 backdrop-blur-sm rounded-2xl p-8 border border-[#00d4ff]/20 hover:border-[#00d4ff]/50 transition-all shadow-xl"
                 data-testid={`experience-${index}`}
               >
                 <div className="flex items-center gap-3 mb-4">
@@ -619,7 +619,7 @@ const App = () => {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-slate-800/30 backdrop-blur-sm rounded-xl overflow-hidden border border-slate-700/30 hover:border-[#00d4ff]/50 transition-all hover:transform hover:scale-105 shadow-xl cursor-pointer group"
+                className="bg-[#0a0a0f]/60 backdrop-blur-sm rounded-xl overflow-hidden border border-[#00d4ff]/20 hover:border-[#00d4ff]/50 transition-all hover:transform hover:scale-105 shadow-xl cursor-pointer group"
                 onClick={() => setSelectedProject(project)}
                 data-testid={`project-${project.id}`}
               >
@@ -630,7 +630,7 @@ const App = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-gradient-to-r from-cyan-600 to-purple-600 text-white text-xs font-semibold rounded-full shadow-lg">
+                    <span className="px-3 py-1 bg-gradient-to-r from-[#00d4ff] to-[#7b2ff7] text-white text-xs font-semibold rounded-full shadow-lg">
                       {project.badge}
                     </span>
                   </div>
@@ -664,7 +664,7 @@ const App = () => {
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="bg-slate-800/30 backdrop-blur-sm p-6 rounded-xl border border-slate-700/30 hover:border-[#00d4ff]/50 transition-all shadow-lg"
+                className="bg-[#0a0a0f]/60 backdrop-blur-sm p-6 rounded-xl border border-[#00d4ff]/20 hover:border-[#00d4ff]/50 transition-all shadow-lg"
                 data-testid={`certification-${index}`}
               >
                 <div className="flex items-start justify-between mb-3">
@@ -696,7 +696,7 @@ const App = () => {
             {education.map((edu, index) => (
               <div
                 key={index}
-                className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/30 shadow-xl"
+                className="bg-[#0a0a0f]/60 backdrop-blur-sm rounded-2xl p-8 border border-[#00d4ff]/20 shadow-xl"
                 data-testid={`education-${index}`}
               >
                 <div className="flex items-start gap-6">
@@ -738,7 +738,7 @@ const App = () => {
             <div className="flex flex-wrap justify-center gap-4">
               <button
                 onClick={() => setShowContactForm(true)}
-                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-700 hover:to-purple-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-cyan-500/30"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#00d4ff] to-[#7b2ff7] hover:from-cyan-700 hover:to-purple-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-[#00d4ff]/30"
                 data-testid="send-email-btn"
               >
                 <Mail className="w-5 h-5" />
@@ -748,7 +748,7 @@ const App = () => {
                 href="https://www.linkedin.com/in/viralpatel24/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-purple-500/30"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#7b2ff7] to-[#f107a3] hover:from-purple-700 hover:to-pink-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg shadow-purple-500/30"
                 data-testid="linkedin-link"
               >
                 <Linkedin className="w-5 h-5" />
@@ -777,7 +777,7 @@ const App = () => {
           data-testid="project-modal"
         >
           <div
-            className="bg-slate-900/95 rounded-2xl max-w-4xl w-full my-8 border border-[#00d4ff]/20 shadow-2xl shadow-cyan-500/10"
+            className="bg-slate-900/95 rounded-2xl max-w-4xl w-full my-8 border border-[#00d4ff]/20 shadow-2xl shadow-[#00d4ff]/10"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative h-64 md:h-96">
@@ -794,7 +794,7 @@ const App = () => {
                 <X className="w-6 h-6" />
               </button>
               <div className="absolute bottom-4 left-4">
-                <span className="px-4 py-2 bg-gradient-to-r from-cyan-600 to-purple-600 text-white font-semibold rounded-full shadow-lg">
+                <span className="px-4 py-2 bg-gradient-to-r from-[#00d4ff] to-[#7b2ff7] text-white font-semibold rounded-full shadow-lg">
                   {selectedProject.badge}
                 </span>
               </div>
@@ -864,7 +864,7 @@ const App = () => {
           data-testid="contact-form-modal"
         >
           <div
-            className="bg-slate-900/95 rounded-2xl max-w-md w-full p-8 border border-[#00d4ff]/20 shadow-2xl shadow-cyan-500/10"
+            className="bg-slate-900/95 rounded-2xl max-w-md w-full p-8 border border-[#00d4ff]/20 shadow-2xl shadow-[#00d4ff]/10"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between mb-6">
@@ -918,7 +918,7 @@ const App = () => {
               <button
                 type="submit"
                 disabled={formStatus === 'sending'}
-                className="w-full px-6 py-3 bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-700 hover:to-purple-700 disabled:bg-slate-600 text-white rounded-lg font-semibold transition-all shadow-lg shadow-cyan-500/20"
+                className="w-full px-6 py-3 bg-gradient-to-r from-[#00d4ff] to-[#7b2ff7] hover:from-cyan-700 hover:to-purple-700 disabled:bg-slate-600 text-white rounded-lg font-semibold transition-all shadow-lg shadow-[#00d4ff]/20"
                 data-testid="contact-submit-btn"
               >
                 {formStatus === 'sending' ? 'Opening Email Client...' : formStatus === 'success' ? '✓ Email Client Opened' : 'Send Message'}
