@@ -225,27 +225,38 @@ const App = () => {
 
   const experiences = [
     {
-      period: 'Feb 2025 - Sep 2025',
-      title: 'Inventory Analyst',
-      company: 'Pkg Place',
-      location: 'Mississauga, CA',
+      period: 'Jan 2026 - Present',
+      title: 'Data Analyst',
+      company: 'Data for Good (YRES, Remote)',
+      location: 'Canada',
       points: [
-        '▸ Coordinated 3PL and daily logistics reviews, improving forecast visibility 25% via tracking dashboards',
-        '▸ Streamlined warehouse flow by managing manifests and cross-dock dispatch, boosting efficiency 20%',
-        '▸ Updated barcode catalogs and standardized SKU labeling, improving product tracking accuracy by 20%',
-        '▸ Verified payments and pricing checks to validate vendor charge consistency, reducing errors by 15%'
+        '▸ Analyzed and consolidated transactional sales data across 30+ retail locations to produce monthly, quarterly, and annual performance insights supporting executive decision-making',
+        '▸ Defined and validated province-level KPI logic and business rules, reducing reporting rework by ~30% and improving data confidence for leadership reviews',
+        '▸ Experience supporting enterprise workflow-driven systems involving user lifecycle processes, approvals, validations, and compliance governance'
       ]
     },
     {
-      period: 'Feb 2023 - Dec 2024',
-      title: 'Project Coordinator (Contract)',
-      company: 'First Choice Beverages',
-      location: 'Mississauga, CA',
+      period: 'Aug 2024 - Sep 2025',
+      title: 'Data Analyst',
+      company: 'Pkg Place',
+      location: 'Mississauga, Canada',
       points: [
-        '▸ Coordinated cross-functional project teams and managed project deliverables',
-        '▸ Facilitated stakeholder communication and project documentation',
-        '▸ Ensured project milestones were met within scope and timeline',
-        '▸ Maintained project tracking systems and status reporting for senior leadership'
+        '▸ Translated logistics stakeholder requirements into validated tracking dashboards, improving delivery visibility and forecasting accuracy by 25%',
+        '▸ Standardized warehouse and cross-dock workflows across manifests, dispatch, and SKU labeling, reducing process variation and improving operational efficiency by 20%',
+        '▸ Performed pricing and vendor charge validation using SQL and Excel analytics, reducing billing discrepancies by 15% and strengthening financial and inventory controls',
+        '▸ Strong understanding of system configuration, process standardization, testing execution, and vendor coordination in global rollout environments'
+      ]
+    },
+    {
+      period: 'Feb 2023 - May 2024',
+      title: 'Business System Analyst',
+      company: 'First Choice Beverages',
+      location: 'Mississauga, Canada',
+      points: [
+        '▸ Managed procurement operations including purchase orders, vendor coordination, inventory tracking, logistics collaboration, and finance support (invoicing and reconciliation)',
+        '▸ Streamlined documentation and administrative processes to improve operational efficiency and financial record accuracy',
+        '▸ Collaborated with HR and business stakeholders to support workflow documentation and testing activities for user lifecycle processes within enterprise systems, ensuring alignment with governance standards',
+        '▸ Partnered with HR and business stakeholders to document workflow requirements and support testing of user lifecycle processes within enterprise systems'
       ]
     },
     {
@@ -254,22 +265,22 @@ const App = () => {
       company: 'ArcelorMittal Nippon Steel',
       location: 'Surat, India',
       points: [
-        '▸ Led requirements gathering and stakeholder workshops across multiple operational workflows',
-        '▸ Delivered 20+ BRDs, FRDs, and process flow diagrams for development teams',
-        '▸ Improved business process efficiency by 18% through structured analysis',
-        '▸ Created real-time KPI dashboards in Power BI for executive decision-making'
+        '▸ Translated cross-functional business requirements into SAP MM and finance reporting solutions, improving audit readiness and financial accuracy by 25%',
+        '▸ Led SAP MM master data and purchase document changes by owning functional documentation, impact analysis, and UAT sign-off, delivering zero-downtime, zero-defect releases',
+        '▸ Designed and governed multi-source Tableau KPI dashboards for leadership, reducing recurring reporting cycles from ~2 days to hours',
+        '▸ Automated change request and report-publishing workflows, strengthening delivery governance and eliminating missed deadlines'
       ]
     },
     {
       period: 'Aug 2017 - June 2019',
-      title: 'Quality Assurance Engineer',
+      title: 'Business System Analyst',
       company: 'Essar Steel Pvt. Ltd.',
       location: 'Surat, India',
       points: [
-        '▸ Developed and executed comprehensive test cases for quality assurance',
-        '▸ Streamlined UAT cycles by 35% through structured testing processes',
-        '▸ Ensured 100% audit compliance through data governance controls',
-        '▸ Reduced manual system dependencies by 22% through automation'
+        '▸ Supported live shipping and goods auctions by documenting requirements and implementing automated bidding logic, contributing to $500K+ annual cost savings',
+        '▸ Executed SAP MM purchase document changes with structured impact analysis and UAT support, ensuring stable, error-free production releases',
+        '▸ Automated auction reporting and stakeholder notifications, reducing manual coordination and improving delivery timeliness',
+        '▸ Optimized SAP vendor aging and debit reports using BAPI and performance tuning, reducing runtime from 15+ minutes to under 3 minutes'
       ]
     }
   ];
