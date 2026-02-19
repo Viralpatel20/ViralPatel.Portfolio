@@ -456,13 +456,9 @@ const App = () => {
                   </span>
                 </h1>
                 
-                <p className="text-xl text-gray-300 leading-relaxed">
-                  Results-driven Business System Analyst with 6+ years of experience bridging business needs and technology solutions in enterprise environments. Proven ability to support full SDLC/STLC cycles, optimize business processes, and translate functional requirements into scalable solutions.
-                </p>
-                
                 <div className="flex flex-wrap gap-4">
                   <a
-                    href="https://customer-assets.emergentagent.com/job_glreporting/artifacts/komewxbd_Viral_Patel_Resume.pdf"
+                    href="https://customer-assets.emergentagent.com/job_glreporting/artifacts/ithwqdlr_Viral_Patel_Resume%20.pdf"
                     download
                     className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#00d4ff] to-[#7b2ff7] hover:from-[#00b8e6] hover:to-[#6929d9] text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
                     style={{ boxShadow: '0 0 20px rgba(0, 212, 255, 0.3)' }}
