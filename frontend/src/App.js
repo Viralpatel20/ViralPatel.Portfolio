@@ -629,12 +629,13 @@ const App = () => {
                     <Calendar className="w-5 h-5 text-[#00d4ff]" />
                     <span className="text-[#00d4ff] font-medium text-lg">{exp.period}</span>
                   </div>
-                  <h3 className="text-3xl font-bold text-white mb-2">{exp.title}</h3>
-                  <div className="flex items-center gap-2 mb-6">
+                  <div className="flex flex-wrap items-center gap-2 mb-6">
+                    <h3 className="text-2xl font-bold text-white">{exp.title}</h3>
+                    <span className="text-gray-500">-</span>
                     <span className="text-xl text-[#f107a3] font-semibold">{exp.company}</span>
                     {exp.location && (
                       <>
-                        <span className="text-gray-500">•</span>
+                        <span className="text-gray-500">|</span>
                         <div className="flex items-center gap-1 text-gray-400">
                           <MapPin className="w-4 h-4" />
                           <span>{exp.location}</span>
