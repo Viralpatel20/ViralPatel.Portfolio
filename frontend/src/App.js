@@ -485,10 +485,9 @@ const App = () => {
                   <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-[#00d4ff]/30 shadow-2xl"
                        style={{ boxShadow: '0 0 40px rgba(0, 212, 255, 0.3)' }}>
                     <img
-                      src="https://viral-portfolio-3.emergent.host/viral-patel-photo.png"
+                      src="https://customer-assets.emergentagent.com/job_glreporting/artifacts/pug9qznf_Gemini_Generated_Image_ceancsceancscean.png"
                       alt="Viral Patel - Business System Analyst"
-                      className="w-full h-full object-cover object-top scale-110"
-                      style={{ objectPosition: '50% 10%' }}
+                      className="w-full h-full object-cover object-center"
                       data-testid="profile-photo"
                     />
                   </div>
